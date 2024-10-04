@@ -20,6 +20,7 @@ search.addEventListener('click', () => {
 
             if (json.cod === '404') {
                 container.style.height = '380px';
+		minMax.style.display='none';
                 weatherBox.style.display = 'none';
                 weatherDetails.style.display = 'none';
                 error404.style.display = 'block';
