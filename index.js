@@ -10,8 +10,7 @@ search.addEventListener('click', () => {
 
     const APIKey = 'c83d00fcfb1b42ce7ff5bdad75f71894';
     const city = document.querySelector('.search-box input').value;
-    //const city = 'samarinda';
-
+    
     if (city === '')
         return;
     
@@ -20,7 +19,7 @@ search.addEventListener('click', () => {
         .then(json => {
 
             if (json.cod === '404') {
-                container.style.height = '400px';
+                container.style.height = '380px';
                 weatherBox.style.display = 'none';
                 weatherDetails.style.display = 'none';
                 error404.style.display = 'block';
