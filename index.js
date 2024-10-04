@@ -1,3 +1,4 @@
+
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
@@ -8,7 +9,8 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
 
-    const APIKey = 'c83d00fcfb1b42ce7ff5bdad75f71894';
+    const APIKey = ''; // fill with your api
+
     const city = document.querySelector('.search-box input').value;
     
     if (city === '')
